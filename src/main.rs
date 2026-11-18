@@ -17,8 +17,12 @@ struct Game {
 
 struct App {
     running: bool,
-    ticks: u64,
-    key_presses: u64,
+    ticks: u64, 
+    key_presses: u64, /** some remaining of the code i was using to test if the app worked, you can completly remove key_presses 
+                          and ticks (you would have to do some debug) (i'm not completly shure if removing it will break something or not,
+                          thats why those function are still heare).
+                          and yes my english suck, hope you understand anyways :)
+                          **/
     games: Vec<Game>,
     list_state: ListState,
     message: String,
